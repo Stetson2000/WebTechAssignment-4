@@ -4,7 +4,7 @@ services:
     container_name: eventApi
     image: "stetson2000/webtech-project:1.0"
     ports: 
-      - 3030:3000
+      - 3040:3040
   phpmyadmin:
     container_name: phpmyadmin
     image: phpmyadmin
