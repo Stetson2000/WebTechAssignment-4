@@ -9,11 +9,11 @@ import { Event } from './events/entities/event.entity';
 @Module({
   imports: [EventsModule, TypeOrmModule.forRoot({
     type: 'mariadb',
-    host: 'localhost',
+    host: 'db',
     port: 3306,
     username: 'root',
-    password: '',
-    database: 'ex3',
+    password: 'Web.Tech123',
+    database: 'dev_profile',
     autoLoadEntities: true,
     entities: [Event],
     logger: 'advanced-console',
