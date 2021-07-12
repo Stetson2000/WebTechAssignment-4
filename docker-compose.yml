@@ -5,21 +5,6 @@ services:
     image: "stetson2000/webtech-project:1.0"
     ports: 
       - 3040:3040
-  phpmyadmin:
-    container_name: phpmyadmin
-    image: phpmyadmin
-    restart: always
-    hostname: seekersgroup.live
-    ports:
-      - 8080:80
-    depends_on:
-      - db
-    environment:
-       MYSQL_ROOT_PASSWORD: Web.Tech123
-       PMA_HOST: db
-       PMA_ARBITRARY: 1
-       PMA_PORT: 3306
-       PMA_ABSOLUTE_URI: https://seekersgroup.live/phpmyadmin/
   db:
     image: mariadb:10.3
     ports:
