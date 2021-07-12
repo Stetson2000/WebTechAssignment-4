@@ -5,15 +5,3 @@ services:
     image: "stetson2000/webtech-project:1.0"
     ports: 
       - 3040:3040
-  db:
-    image: mariadb:10.3
-    ports:
-      - 3306:3306
-    environment:
-      MYSQL_ROOT_PASSWORD: Web.Tech123
-      MYSQL_DATABASE: dev_profile
-      MYSQL_ROOT_HOST: '%'
-    volumes:
-      - app-db-data:/var/lib/mysql
-volumes:
-  app-db-data:
