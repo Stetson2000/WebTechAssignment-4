@@ -9,4 +9,4 @@ services:
     depends_on: 
         - db
     ports: 
-        - 3040:3040
+        - 3044:3044
